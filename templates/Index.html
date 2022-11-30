@@ -1,0 +1,112 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parsa Aqazade</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  </head>
+  <body>
+    <header>
+    
+    </header>
+    <div id="content">
+    <div id="maindiv">
+      <section id="left">
+        <h2>Skills:</h2>
+        <div class="divlbl">
+          <h4>Python/Flask</h4>
+          <h4>C++/Qt</h4>
+          <h4>HTML/CSS</h4>
+          <h4>JavaScript</h4>
+        </div>
+        <h2>Language:English</h2>
+        <div class="divlbl">
+          <h4>Hearing:70%</h4>
+          <h4>Reading:95%</h4>
+        </div>
+        <div class="divlbl">
+          <h4>Writing:70%</h4>
+          <h4>Speaking:80%</h4>
+        </div>
+        <h2>Education:Software Engineer</h2>
+        <div class="divlbl">
+          <h4>Khoramdare University</h4>
+          <h4>1398-1401</h4>
+        </div>
+      </section>
+      <section id="right">
+        <img src="/static/Pic.jpg">
+        <div style="margin-bottom: 10px">
+        </div>
+        <div class="headlings">
+          <span>Seyed Ali Aqazade</span>
+        </div>
+        <div class="divlbl">
+          <label>Age:</label>
+          <label>23</label>
+        </div>
+        <br />
+        <div class="divlbl">
+          <label>Military Service:</label>
+          <label>Completed</label>
+        </div>
+        <br />
+        <div class="divlbl">
+          <label>Marital Status:</label>
+          <label>Single</label>
+        </div>
+        <br />
+        <div class="divlbl">
+          <label>Address:</label>
+          <label>HashtBehesht st, Fakoori  st</label>
+        </div>
+        <br />
+        <div class="divlbl">
+          <label>Phone:</label>
+          <label>09027052596</label>
+        </div>
+        <br />
+        <div class="divlbl">
+          <label>Github:</label>
+          <a href="https://github.com/Parsa2596">Parsa2596</a>
+        </div>
+        <br />
+        <div class="divlbl">
+          <label>Instagram:</label>
+          <a href="https://www.instagram.com/parsa.aghazade/">parsa.aghazade</a>
+        </div>
+        <br />
+        <div class="divlbl">
+          <label>Telegram:</label>
+          <a href="t.m/parsa_aghazade">parsa_aghazade</a>
+        </div>
+        <br />
+        <div class="divlbl">
+          <label>E-mail  Address:</label>
+        <span onclick="submitBtn()"
+        id="email">parsa.aghazade@gmail.com</span>
+        </div>
+        
+      </section>
+    </div>
+    
+  </div>
+    <footer>
+  
+    </footer>
+  </body>
+  <script>
+    function submitBtn() {
+      let a = document.createElement("a");
+      a.setAttribute(
+        "href",
+        `mailto:parsaaghazade7@gmail.com`
+      );
+      a.innerHTML = "send email";
+      a.style.display = "none";
+      a.click();
+      document.body.appendChild(a);
+      a.remove();
+    }
+  </script>
+</html>
